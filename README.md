@@ -85,4 +85,24 @@ System.out.println("Thread " + type + " 到达 : " + locations[i]);
 System.out.println("Thread " + type + " 坐等其他朋友...");
 barrier.await();
 ```
+## 运行结果
+```
+Thread walker starting trip
+Thread bus starting trip
+Thread train starting trip
+Thread plane starting trip
+Thread plane 到达 : 邵阳
+Thread plane 坐等其他朋友...
+Thread train 到达 : 邵阳
+Thread train 坐等其他朋友...
+Thread bus 到达 : 邵阳
+Thread bus 坐等其他朋友...
+Thread walker 到达 : 邵阳
+Thread walker 坐等其他朋友...
+Thread walker 一起离开: 邵阳
+Thread plane 一起离开: 邵阳
+Thread bus 一起离开: 邵阳
+Thread train 一起离开: 邵阳
+```
+
 到这里例子已经结束了！不知道有没有你适合的业务场景呢？
